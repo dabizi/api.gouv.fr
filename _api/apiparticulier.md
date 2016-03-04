@@ -21,6 +21,14 @@ keywords:
   - Quotient Familial
   - Revenu Fiscal de Référence
   - Adresse
+
+menu:
+  - name: test1
+    url: test1
+    fa: code
+  - name: test2
+    url: test2
+    fa: ticket
 ---
 
 

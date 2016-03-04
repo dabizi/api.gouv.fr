@@ -2,19 +2,19 @@
 # Main pages style
 ---
 
-header {
-	background-image: url({{ site.baseurl }}/img/marianne.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: .8em;
-	background-color: #FEFEFE;
-	color: #555;
-	height: 2.4em;
-	
-	img {
-		float: right;
-		margin-top: .1em;
-		height: 80%;
-		margin-right: .8em;
+header.ui.menu {
+	height: 4.0em;
+	margin-bottom: 0;
+	a.item	{
+		height: 100%;
+		padding-top: 0;
+		padding-bottom: 0;
+		img:not(.ui) {
+			margin-top: .1em;
+			margin-right: .8em;
+			width: inherit;
+			height: 80%;
+		}
 	}
+
 }

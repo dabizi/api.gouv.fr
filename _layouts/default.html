@@ -5,11 +5,22 @@
   <body>
 
     <div>
-      <a href="{{ site.baseurl }}">
-        <header>
-          <img src="{{ site.baseurl }}/img/logo.svg" alt="{{ site.title }}" />
-        </header>
-      </a>
+      <header class="ui top menu">
+        <a href="{{ site.baseurl }}/" class="item">
+          <img id="marianne" src="{{ site.baseurl }}/img/marianne.svg" alt="logo marianne" >
+          <img id="logo" src="{{ site.baseurl }}/img/logo.svg" alt="{{ site.title }}" >
+        </a>
+
+        {% for item in page.menu %}
+        <a href="{{ site.baseurl }}/{{ item.url }}" class="item">
+          {{ item.name }}
+          {% if item.fa %}
+          &nbsp;&nbsp;
+          <i class="{{ item.fa }} icon"></i>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </header>
 
       {{ content }}
 
